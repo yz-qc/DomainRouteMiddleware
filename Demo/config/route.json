@@ -1,0 +1,15 @@
+{
+  "switch": true
+  ,"jumpPaths": ["/api/"]
+  ,"defaultPath": "/web/_default/"
+  ,"domainRoute": [
+    {
+      "domainMatch": "admin\\.(\\S+)\\.(\\S+)/",
+      "toPath": "__admin__"
+    },
+    {
+      "domainMatch": "^tpl-([a-zA-Z\\d\\-]+)\\.([a-zA-Z\\d\\-]+)\\.([a-zA-Z\\d\\-]+)/",
+      "toPath": "web/$1"
+    }
+  ]
+}
